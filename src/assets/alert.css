@@ -1,0 +1,93 @@
+/*------------------ 弹出框样式 ------------------*/
+.alert_bg { display:none; position:fixed; top:0px; left:0px; width:100%; height:100%; background:none 0px 0px repeat scroll rgb(0, 0, 0,0.4); }
+.alert { display: ; position:fixed; top:50%; left:50%; z-index:9999999; overflow:hidden; border-radius:5px; border:1px solid #ccc; background:#fff; box-shadow:0 2px 20px rgba(0,0,0,.16); }
+.alert h6 { height:30px; padding:10px 20px; line-height:30px; font-size:16px; color:#666; font-weight:600; }
+.alert_close { position:absolute; right:10px; top:10px; width:30px; height:30px; color:transparent; font-size:0; }
+.alert_close:after{ position:absolute; top:50%; left:50%; margin:-7px 0 0 -7px; width:14px; height:14px; background:url(icon_close.svg) no-repeat; content:""; }
+.alert_close:hover:after { background-position-y:-14px; }
+.alert_content { border-top:1px solid #eee;}
+/*------------------ 支付弹出框 ------------------*/
+/*-- 左侧 --*/
+.vp_event { float:left; width:179px; padding:25px 10px; border-right:1px solid #eee; }
+.vp_event .box { height:240px; }
+.vp_event .box .month { color:#333; font-size:26px; line-height:36px; font-weight:500; }
+.vp_event .box .price { margin:5px 0;}
+.vp_event .box .price strong { display:inline-block; position:relative; height:84px; padding:0 8px; color:#ff8c00; font-weight:500; font-family:impact; font-size:60px; line-height:84px; vertical-align:top; }
+.vp_event .box .price i { position:absolute; bottom:18px; left:100%; color:#999; font-size:20px; line-height:28px; font-weight:400;}
+.vp_event .box .desc { color:#999; line-height:24px; text-align:left; }
+.icon_jifen { display:inline-block; width:100px; height:100px; background:url(icon_jifen.png); }
+/*-- 右侧 --*/
+.vp_cont{ float:right; width:600px; padding:20px 0; margin-left:-1px; border-left:1px solid #eee; }
+/*-- 选择套餐 --*/
+.vip_value_cell { margin:0 15px 20px; overflow:hidden; }
+.vip_value_cell li { float:left; width:33.2%; width:calc(100% / 3 - 10px); margin:0 5px; }
+.vip_value_cell a { display:block; position:relative; height:48px; padding-left:71px; border:1px solid #eee; text-align:center; line-height:48px; }
+.vip_value_cell .month { position:absolute; top:0; left:0; width:70px; border-right:1px solid #eee; background:#fafafa; color:#333; font-size:16px; }
+.vip_value_cell .prices strong { color:#ff8c00; font-weight:500; font-size:20px; }
+.vip_value_cell .prices s { margin-left:5px; color:#ccc; }
+.vip_value_cell a:hover { border-color:#ff8c00; }
+.vip_value_cell a.hover { border-color:#ff8c00; }
+.vip_value_cell a.hover .month { border-color:#ffe7c9; background:#fff9f2; }
+/*-- 支付方式 --*/
+.pay_select { clear:both; overflow:hidden; margin-bottom:20px;}
+.pay_select dt { float:left; width:70px; margin-left:20px; line-height:40px; text-align:right; }
+.pay_select dd { float:left; width:490px; }
+.pay_select dd.line40 { line-height:40px; }
+.bank_list li { position:relative; float:left; width:96px; height:32px; margin:5px; padding:3px 5px; border:1px solid #ddd; color:#666; line-height:32px; cursor:pointer; }
+.bank_list li input { display:none; }
+.bank_list li label b { display:none; }
+.bank_list .check { display:none; position:absolute; right:0; bottom:0; width:20px; height:20px; overflow:hidden; background:url(icon_selected.png) no-repeat; }
+.bank_list .hover,.bank_list li:hover{z-index:2; border-color:#fc9234; background:#fff5e7; color:#f89406; }
+.bank_list .hover .check{ display:block; }
+.pay_ipt { float:left; width:90px; height:30px; margin:1px 3px; overflow:hidden; background:url(icon_pay_type.png); line-height:30; cursor:pointer; }
+.ipt_alipay { background-position:0 0; }
+.ipt_unionpay { background-position:0 -30px; }
+.ipt_weixin { background-position:0 -60px; }
+.ipt_jifen { background-position:0 -90px; }
+/*-- 应付金额 --*/
+.pay_account { height:34px; }
+.pay_account strong { margin-right:5px; color:#f60; font-size:28px; line-height:35px; }
+/*网银支付*/
+.bank_box { width:800px; }
+.ui-list-icons{ width:680px; margin:0 auto; overflow:hidden;padding-bottom:20px;}
+.ui-list-icons li{float:left;overflow:hidden;padding-right:5px;padding-bottom:20px;padding-left:5px;width:126px;height:28px;}
+.ui-list-icons input{vertical-align:middle;}
+.ui-list-icons .current,.ui-list-icons .hover{border-color:#6bbb34!important;}
+.ui-list-icons .icon-box{left:3px;cursor:pointer;}
+.icon-box,.icon-box-commend{position:relative;display:inline-block;width:126px;border:1px solid #eee;background-color:#eee;vertical-align:middle;}
+.icon-box .icon-box-sparkling{position:absolute;top:-18px;left:0;height:14px;line-height:14px;}
+.ui-list-icons .icon-box{left:3px;cursor:pointer;}
+.cashier-bank .icon{height:36px;}
+.cashier-bank input{display:none;}
+.icon-box .icon,.icon-box-commend .icon{position:relative;z-index:1;display:block;overflow:hidden;padding:0 10px;height:36px;background-repeat:no-repeat;color:#07F;white-space:nowrap;font-weight:700;line-height:30px;}
+.ABC,.BJBANK,.BJRCB,.BOC,.CCB,.CDCB,.CEB,.CIB,.CITIC,.CMB,.CMBC,.COMM,.CSRCB,.FDB,.GDB,.HZCB,.ICBC,.NBBANK,.NJCB,.PSBC,.SHBANK,.SHRCB,.SPABANK,.SPDB,.WZCB,.ZJNX{background-image:url(../assets/bank_icon.jpg);text-indent:-9999px;}
+.ui-list-icons .icon-box{left:3px;cursor:pointer;}
+.icon-box .bank-name,.icon-box-commend .bank-name{position:absolute;top:0;left:5px;z-index:0;overflow:hidden;width:121px;height:36px;}
+.ui-list-icons .icon-box{left:3px;cursor:pointer;}
+.ABC {background-position: 0px -0px; } 
+.BJBANK {background-position: 0px -36px; } 
+.BJRCB {background-position: 0px -72px; } 
+.BOC {background-position: 0px -108px; } 
+.CCB {background-position: 0px -144px; } 
+.CDCB {background-position: 0px -180px; } 
+.CEB {background-position: 0px -216px; } 
+.CIB {background-position: 0px -252px; } 
+.CITIC {background-position: 0px -288px; } 
+.CMB {background-position: 0px -324px; } 
+.CMBC {background-position: 0px -360px; } 
+.COMM {background-position: 0px -396px; } 
+.CSRCB {background-position: 0px -432px; } 
+.FDB {background-position: 0px -468px; } 
+.GDB {background-position: 0px -504px; } 
+.HZCB {background-position: 0px -540px; } 
+.ICBC {background-position: 0px -576px; } 
+.NBBANK {background-position: 0px -612px; } 
+.NJCB {background-position: 0px -648px; } 
+.PSBC {background-position: 0px -684px; } 
+.SHBANK {background-position: 0px -720px; } 
+.SHRCB {background-position: 0px -756px; } 
+.SPABANK {background-position: 0px -792px; } 
+.SPDB {background-position: 0px -828px; } 
+.WZCB {background-position: 0px -864px; } 
+.ZJNX {background-position: 0px -900px; }
+.dagou { background: url(../assets/bank_g.png); font-size: 0px; font-weight: normal; overflow: hidden; position: absolute; right: 0; bottom: 0; color: #fff; width: 16px; height: 16px; line-height: 16px; text-align: center; display: none; z-index:999; } 

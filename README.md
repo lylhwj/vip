@@ -49,4 +49,4 @@
 ### 4.前端模块安装并启动项目步骤(在项目当前目录下cmd运行)
 * npm install -g cnpm --registry=https://registry.npm.taobao.org 安装淘宝npm镜像
 * cnpm i 
-* npm start (运行本地开发环境)  # vip
+* npm start (运行本地开发环境)  
